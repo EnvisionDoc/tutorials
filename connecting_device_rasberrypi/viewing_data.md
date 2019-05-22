@@ -14,15 +14,15 @@ After the device is connected and starts uploading data to EnOS Cloud, you can m
 
 The device data uploaded to EnOS Cloud can be viewed on the EnOS Console:  
 
-1. Open the **Device Details** page, click **Measure Points**.
+1. Open the **Device Details** page, click **Measuring Points**.
 
-2. Locate the *Temperature* measure point, click **View data**. 
+2. Locate the *Temperature* measuring point, click **View data**.
 
 3. Select a time range and view the device data in a chart or table. See the following example.
 
    .. image:: media/device_data.png
 
-With storage policy configured, the uploaded device data can be stored for further processing and analysis. For more information, see [Data Asset Management](/docs/data-asset/en/latest/data_asset_overview). 
+With storage policy configured, the uploaded device data can be stored for further processing and analysis. For more information, see [Data Asset Management](/docs/data-asset/en/latest/data_asset_overview).
 
 ## Viewing Alert Records
 

@@ -45,7 +45,7 @@ from message.upstream.status.SubDeviceLoginRequest import SubDeviceLoginRequest
 from core.MqttClient import MqttClient
 from message.upstream.topo.TopoAddRequest import TopoAddRequest
 from message.upstream.topo.SubDeviceInfo import SubDeviceInfo
-from message.upstream.tsl.MeasurepointPostRequest import MeasurepointPostRequest
+from message.upstream.tsl.measuringpointPostRequest import MeasurepointPostRequest
 from message.upstream.topo.TopoGetRequest import TopoGetRequest
 from message.upstream.topo.TopoDeleteRequest import TopoDeleteRequest
 from led import set_light, get_light
@@ -112,7 +112,7 @@ def login_sub_device(mqtt_client):
     except Exception as e:
         print e
 
-# post measure points data via MQTT
+# post measuring points data via MQTT
 def post_measure_points(mqtt_client, timestamp):
     try:
         meapt_req = MeasurepointPostRequest.builder() \
@@ -182,7 +182,7 @@ if __name__ == "__main__":
     interval = 1
     while True:
         timestamp = int(time.time() * 1000)  # timestamp in milliseconds
-        post_measure_points(client, timestamp)     # publish measure points data
+        post_measure_points(client, timestamp)     # publish measuring points data
         time.sleep(interval)
         cnt = cnt + 1
 ```

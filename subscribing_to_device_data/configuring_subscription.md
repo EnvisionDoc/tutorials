@@ -1,12 +1,12 @@
 # Unit 3: Configuring Data Subscription
 
-To subscribe to the real-time measure point data and alert records of the electric meter, you need to configure data subscription on the EnOS Console. For more information about the features of the Data Subscription service, see [Data Subscription](https://www.envisioniot.com/docs/data-asset/en/latest/learn/data_subscription_overview.html).
+To subscribe to the real-time measuring point data and alert records of the electric meter, you need to configure data subscription on the EnOS Console. For more information about the features of the Data Subscription service, see [Data Subscription](https://www.envisioniot.com/docs/data-asset/en/latest/learn/data_subscription_overview.html).
 
 Follow the instructions below to configure data subscriptions for the device real-time data and alert record separately.
 
 ## Subscribing to Real-Time Data
 
-Take the following steps to configure a subscription for the real-time measure point data of the electric meter:
+Take the following steps to configure a subscription for the real-time measuring point data of the electric meter:
 
 1. Log in EnOS Console and select **Data Subscription > New Subscription**.
 
@@ -28,7 +28,7 @@ Take the following steps to configure a subscription for the real-time measure p
    * - Customers
      - Select the customers whose data are to be subscribed to (typically your own device data).
    * - Model Filter
-     - Select the *Grid.TopupAcMeter* model and the *Temperature* measure point for this tutorial.
+     - Select the *Grid.TopupAcMeter* model and the *Temperature* measuring point for this tutorial.
 
 3. Click **Save** to complete the configuration.
 

@@ -1,6 +1,6 @@
 # Unit 4: Developing Stream Data Processing Jobs
 
-After storage policies are configured for the smart electric meter measure points and the data is connected to EnOS, you can develop data processing jobs for the uploaded data. EnOS Stream Analytics targets to meet the real-time data processing requirements of devices and assets. The Stream Analytics service provides visualized template-based configuration to help you quickly develop stream analytics jobs and monitor the running status of the jobs.
+After storage policies are configured for the smart electric meter measuring points and the data is connected to EnOS, you can develop data processing jobs for the uploaded data. EnOS Stream Analytics targets to meet the real-time data processing requirements of devices and assets. The Stream Analytics service provides visualized template-based configuration to help you quickly develop stream analytics jobs and monitor the running status of the jobs.
 
 
 ## Creating data processing jobs
@@ -20,9 +20,9 @@ See the following example:
 
 EnOS Stream Analytics provides several templates for processing stream data. In this tutorial, configure 2 data processing jobs using the *Window Aggregation for AI* and *Multi-Point Aggregation* templates.
 
-### Job for getting the max/min values of a measure point
+### Job for getting the max/min values of a measuring point
 
-In this step, use the *Window Aggregation for AI* template to create a data processing job for processing the data of the *Reading* measure point and assigning the processed data to another measure point.
+In this step, use the *Window Aggregation for AI* template to create a data processing job for processing the data of the *Reading* measuring point and assigning the processed data to another measuring point.
 
 Complete the following configuration for the stream data processing job:
 
@@ -30,12 +30,12 @@ Complete the following configuration for the stream data processing job:
 | --------------- | --------------------------------- | ------------------------------------------------------------ |
 | Window Type     | Tumbling Window                   | The time window for processing data, which has a fixed size and does not overlap. |
 | Latency Setting | 1 day                             | The allowed lateness for data arriving late. *0 second* indicates that data arriving late will be ignored. |
-| Input Point     | Reading                           | The measure point providing raw data.                        |
+| Input Point     | Reading                           | The measuring point providing raw data.                        |
 | Threshold       | [0, 100)                          | The threshold filtering valid data value.                    |
 | Interpolation   | Ignore                            | Interpolation algorithm that is used to process the input data that exceeds the threshold. |
 | Aggregation     | max / min                         | Get the maximum / minimum value of the meter reading data.   |
 | Window Size     | 10 minutes                        | The size of each time window for processing data.            |
-| Output Point    | MaxReading10Min / MinReading10Min | The measure points receiving the processed data.             |
+| Output Point    | MaxReading10Min / MinReading10Min | The measuring points receiving the processed data.             |
 
 See the following example:
 
@@ -43,9 +43,9 @@ See the following example:
 
 For more information about the *Window Aggregation for AI* template, see [AI Data Aggregation Template](https://www.envisioniot.com/docs/data-asset/en/latest/learn/ai_template_overview.html).
 
-### Job for getting the difference between measure points
+### Job for getting the difference between measuring points
 
-In this step, use the *Multi-Point Aggregation* template to create a data processing job for getting the difference between 2 measure points and assigning the processed data to another measure point.
+In this step, use the *Multi-Point Aggregation* template to create a data processing job for getting the difference between 2 measuring points and assigning the processed data to another measuring point.
 
 Complete the following configuration for the stream data processing job:
 
@@ -53,8 +53,8 @@ Complete the following configuration for the stream data processing job:
 | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Triggering Mode      | Frequency                                                    | The data processing job is triggered by the specified frequency. |
 | Triggering Frequency | 10 minutes                                                   | The data processing job will run every 10 minutes.           |
-| Output Point         | ReadingDifference                                            | The measure point receiving the processed data.              |
-| Output Logic         | `${ElectricMeter::MaxReading10Min} - ${ElectricMeter::MinReading10Min}` | The expression for getting the difference between the values of the 2 measure points. |
+| Output Point         | ReadingDifference                                            | The measuring point receiving the processed data.              |
+| Output Logic         | `${ElectricMeter::MaxReading10Min} - ${ElectricMeter::MinReading10Min}` | The expression for getting the difference between the values of the 2 measuring points. |
 
 See the following example:
 
@@ -97,4 +97,3 @@ Then, you can get the stored data with EnOS APIs as the follow-up step.
 [Getting Stored Data with EnOS APIs](getting_stored_data)
 
 <!--end-->
-

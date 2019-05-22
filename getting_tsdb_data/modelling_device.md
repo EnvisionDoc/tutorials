@@ -10,7 +10,7 @@ Create a model for the electric meter with the following basic settings:
 - **Source Model**: NA
 - **Description**: Model for electric meter
 
-Define the measure points for the model:
+Define the measuring points for the model:
 
 .. list-table::
    :widths: auto
@@ -20,22 +20,22 @@ Define the measure points for the model:
      - Identifier   
      - Point Type
      - Description   
-   * - Measure Point
+   * - Measuring Point
      - Reading
      - Reading
      - AI
      - Original meter reading data
-   * - Measure Point
+   * - Measuring Point
      - MaxReading10Min
      - MaxReading10Min
      - AI
      - Maximum reading data in 10 minutes
-   * - Measure Point
+   * - Measuring Point
      - MinReading10Min
      - MinReading10Min
      - AI
      - Minimum reading data in 10 minutes
-   * - Measure Point
+   * - Measuring Point
      - ReadingDifference
      - ReadingDifference
      - AI
@@ -48,4 +48,3 @@ See the following example:
 ## Next Unit
 
 [Configuring Storage Policy for the Device Data](configuring_storage_policy)
-

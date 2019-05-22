@@ -1,10 +1,10 @@
 # Unit 2: Configuring Alert Settings and Simulating Data Transmission
 
-After the smart electric meter is registered on EnOS Console, you can connect the device and report simulated device data to EnOS Cloud. After that, configure alert settings to monitor the temperature value of the smart meter. 
+After the smart electric meter is registered on EnOS Console, you can connect the device and report simulated device data to EnOS Cloud. After that, configure alert settings to monitor the temperature value of the smart meter.
 
 ## Step 1: Configuring alert settings
 
-The *Connecting Devices into EnOS Using SDK* tutorial describes detailed steps for configuring alert settings for a device. Follow the same steps to configure alert setting for the temperature value of the smart electric meter. 
+The *Connecting Devices into EnOS Using SDK* tutorial describes detailed steps for configuring alert settings for a device. Follow the same steps to configure alert setting for the temperature value of the smart electric meter.
 
 See the following example:
 
@@ -14,7 +14,7 @@ When the alert rule is saved, it will be running to monitor the temperature valu
 
 ## Simulating device data
 
-The *Connecting Devices into EnOS Using SDK* tutorial describes detailed steps for connecting a smart device into EnOS and simulating device data with the Device SDK for MQTT. Follow the same steps to report simulated temperature data of the electric meter to EnOS Cloud. The following code sample is for your reference: 
+The *Connecting Devices into EnOS Using SDK* tutorial describes detailed steps for connecting a smart device into EnOS and simulating device data with the Device SDK for MQTT. Follow the same steps to report simulated temperature data of the electric meter to EnOS Cloud. The following code sample is for your reference:
 
 ```java
 import com.envisioniot.enos.iot_mqtt_sdk.core.IConnectCallback;
@@ -99,13 +99,13 @@ In this example:
 
 - The variables `HOST` and `PORT` of the EnOS server vary with the cloud region and instance. For private cloud instances, contact your Envision project manager or support representative to get the host and port information.
 - The variables `productKey`, `deviceKey`, and `deviceSecret` are the triple attributes of the registered *Demo_meter* device, which can be found on the EnOS Console.
-- Randomly simulated values of the *Temperature* measure point will be uploaded to EnOS Cloud every 10 seconds.
+- Randomly simulated values of the *Temperature* measuring point will be uploaded to EnOS Cloud every 10 seconds.
 
 When the device is connected, check the device status through the **Device Management >  Device** page:
 
 .. image:: media/device_state.png
 
-When simulated data is being uploaded to EnOS Cloud, view the uploaded data on the **Device Details** page: 
+When simulated data is being uploaded to EnOS Cloud, view the uploaded data on the **Device Details** page:
 
 .. image:: media/simulated_data.png
 
@@ -115,4 +115,3 @@ When simulated data is being uploaded to EnOS Cloud, view the uploaded data on t
 [Configuring Data Subscription](configuring_subscription)
 
 <!--end-->
-

@@ -2,7 +2,7 @@
 
 ## Scenario
 
-In the energy industry, monitoring the status of batteries during charging is common business scenario. Temperature is an important indicator of the battery status and safety. By connecting the smart battery devices into EnOS, you can ingest the real-time temperature data, configure alert settings to monitor the battery status, and control the state of the battery device. 
+In the energy industry, monitoring the status of batteries during charging is common business scenario. Temperature is an important indicator of the battery status and safety. By connecting the smart battery devices into EnOS, you can ingest the real-time temperature data, configure alert settings to monitor the battery status, and control the state of the battery device.
 
 The scenario is depicted in the following chart:
 
@@ -20,7 +20,7 @@ This tutorial walks you through registering a smart battery device on the EnOS C
 
 ## Prerequisites
 
-- You have signed up to EnOS for an individual account or an enterprise account to access the EnOS Console. 
+- You have signed up to EnOS for an individual account or an enterprise account to access the EnOS Console.
 - Your account must been assigned full access to the model service, device connectivity & management service, and asset tree service.
 
 ## Units
@@ -31,11 +31,11 @@ This tutorial includes the following units:
 >
 > 10 minutes
 
-> [Connecting Device into EnOS Cloud](connecting_device) 
+> [Connecting Device into EnOS Cloud](connecting_device)
 >
 > 20 minutes
 
-> [Reporting Device Measure Point Data](simulating_data)
+> [Reporting Device Measuring Point Data](simulating_data)
 >
 > 20 minutes
 

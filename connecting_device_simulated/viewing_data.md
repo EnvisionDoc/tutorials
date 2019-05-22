@@ -13,7 +13,7 @@ In the EnOS Console, click **Device Management > Device**, locate the INV001 dev
 The device data uploaded to EnOS Cloud can be viewed on the EnOS Console:  
 
 1. In the **Device** page, locate the *battery1* device and click **View** to show the **Device Details** page.
-2. Click the **Measure Points** tab, locate the **temperature** measure point, and click **View Data**.
+2. Click the **Measuring Points** tab, locate the **temperature** measuring point, and click **View Data**.
 3. Select a time range to view the uploaded data in a chart or in a table.
 
-With storage settings configured, the uploaded device data can be stored for further processing and analysis. For more information, see [Data Asset Management](/docs/data-asset/en/latest/data_asset_overview). 
+With storage settings configured, the uploaded device data can be stored for further processing and analysis. For more information, see [Data Asset Management](/docs/data-asset/en/latest/data_asset_overview).

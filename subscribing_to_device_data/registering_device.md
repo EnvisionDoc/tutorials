@@ -16,7 +16,7 @@ Create a model with the following basic settings:
 - **Source Model**: NA
 - **Description**: AC meter that has a temperature sensor
 
-Define the "Temperature" measure point for the model:
+Define the "Temperature" measuring point for the model:
 
 .. list-table::
    :widths: auto
@@ -26,7 +26,7 @@ Define the "Temperature" measure point for the model:
      - Identifier   
      - Point Type
      - Data Type   
-   * - Measure Point
+   * - Measuring Point
      - Temperature
      - Temperature
      - AI
@@ -57,5 +57,4 @@ Create a smart electric meter with the following basic settings:
 
 ## Next Unit
 
-[Simulating Device Data and Configuring Alert Settings](setting_alerts) 
-
+[Simulating Device Data and Configuring Alert Settings](setting_alerts)

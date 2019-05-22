@@ -32,7 +32,7 @@ The **SDK Center** on the EnOS Console lists all the EnOS SDKs with links to Git
    </dependency>
    ```
 
-Optionally, you can download the source code of the EnOS Device SDK from [GitHub](https://github.com/EnvisionIot/enos-mqtt-java-sdk) and install it in your development environment. 
+Optionally, you can download the source code of the EnOS Device SDK from [GitHub](https://github.com/EnvisionIot/enos-mqtt-java-sdk) and install it in your development environment.
 
 ## Programming for Device Connection
 
@@ -63,7 +63,7 @@ After the EnOS Device SDK for MQTT for Java is installed, take the following ste
    ```java
    public static void initWithCallback() {
        System.out.println("start connect with callback ... ");
-   
+
        try {
            client = new MqttClient(uri, productKey, deviceKey, deviceSecret);
            client.getProfile().setConnectionTimeout(60).setAutoReconnect(false);
@@ -72,18 +72,18 @@ After the EnOS Device SDK for MQTT for Java is installed, take the following ste
                    SimpleSendReceive.subDeviceLogin();
                    System.out.println("connect success");
                }
-   
+
                public void onConnectLost() {
                    System.out.println("onConnectLost");
                }
-   
+
                public void onConnectFailed(int reasonCode) {
                    System.out.println("onConnectFailed : " + reasonCode);
                }
            });
        } catch (EnvisionException var1) {
        }
-   
+
        System.out.println("connect result :" + client.isConnected());
    }
    ```
@@ -91,7 +91,7 @@ After the EnOS Device SDK for MQTT for Java is installed, take the following ste
 5. Check the running result of the program. The program will return the following result if the device connection is successful:
 
    ```
-   start connect with callback ... 
+   start connect with callback ...
    connect result :true
    ```
 
@@ -101,5 +101,4 @@ After the EnOS Device SDK for MQTT for Java is installed, take the following ste
 
 ## Next Unit
 
-[Simulating the Device Measure Point Data](simulating_data)
-
+[Simulating the Device Measuring Point Data](simulating_data)

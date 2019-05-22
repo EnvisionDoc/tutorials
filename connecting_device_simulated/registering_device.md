@@ -1,12 +1,12 @@
 # Unit 1: Registering Devices on EnOS Console
 
-Before connecting devices to EnOS IoT hub, you need to register the devices on the EnOS Console, which includes defining the device model, creating a product, registering the devices, and creating an asset tree for the devices. 
+Before connecting devices to EnOS IoT hub, you need to register the devices on the EnOS Console, which includes defining the device model, creating a product, registering the devices, and creating an asset tree for the devices.
 
 This tutorial takes a battery device as an example, focusing on how to register a device that connects directly to the EnOS Cloud.
 
 ## Step 1: Defining a Model
 
-A model is the abstraction of the features of an object that is connected to IoT. The device model defines the features of a device, including attributes, measure points, services, and events. For more information about models, see [Thing Model](/docs/device-connection/en/latest/model/model_overview). 
+A model is the abstraction of the features of an object that is connected to IoT. The device model defines the features of a device, including attributes, measuring points, services, and events. For more information about models, see [Thing Model](/docs/device-connection/en/latest/model/model_overview).
 
 This step assumes that there is no device model to be reused on EnOS. Take the following steps to create a model named **battery**.
 
@@ -35,7 +35,7 @@ This step assumes that there is no device model to be reused on EnOS. Take the f
 
       "Feature Type", "Name", "Identifier", "Data Type", "Description"
       "Attribute", "brand", "brand", "String", "Brand information of the device"
-      "Measure Point", "temperature", "temperature", "Double", "Point to ingest the device temperature data"
+      "Measuring Point", "temperature", "temperature", "Double", "Point to ingest the device temperature data"
       "Service", "charging", "charging", "--", "Service that controls the charging status of the device"
 
 See the following screen capture of the created features of the model:
@@ -98,5 +98,4 @@ After you complete the device registration, you can get the device triple proper
 
 ## Next Unit
 
-[Connecting the Device into EnOS Cloud](connecting_device) 
-
+[Connecting the Device into EnOS Cloud](connecting_device)

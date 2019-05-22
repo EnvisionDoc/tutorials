@@ -16,7 +16,7 @@ To monitor the health and performance of your devices, you can define customized
 
    .. image:: media/alert_content.png
 
-5. Click **Alert Rule > New Rule** to define the alert rule for monitoring the battery temperature. For example, when the value of the temperature measure point exceeds 100 degrees, the alert will be triggered.
+5. Click **Alert Rule > New Rule** to define the alert rule for monitoring the battery temperature. For example, when the value of the temperature measuring point exceeds 100 degrees, the alert will be triggered.
 
    .. image:: media/alert_rule.png
 
@@ -29,4 +29,3 @@ You can also use the event service APIs to query alert records. For example, usi
 
 
 <!-- end -->
-

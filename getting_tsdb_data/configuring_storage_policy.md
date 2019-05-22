@@ -2,13 +2,13 @@
 
 EnOS Time Series Database (TSDB) enables you to store important and frequently-accessed business data with a variety of data storage options. Data is stored in TSDB by categories (data types and storage time), thus reducing data storage costs and enhancing data reading efficiency.
 
-Before the reading data of the electric meter is uploaded to EnOS Cloud, you need to configure data storage policy for the uploaded data. Otherwise, the uploaded data will not be stored in EnOS TSDB by default. 
+Before the reading data of the electric meter is uploaded to EnOS Cloud, you need to configure data storage policy for the uploaded data. Otherwise, the uploaded data will not be stored in EnOS TSDB by default.
 
-In this tutorial, configure storage policy for the following measure points that have been defined when creating the electric meter model.
+In this tutorial, configure storage policy for the following measuring points that have been defined when creating the electric meter model.
 
-| Measure Point     | Storage Type       | Description                                                  |
+| Measuring Point     | Storage Type       | Description                                                  |
 | ----------------- | ------------------ | ------------------------------------------------------------ |
-| Reading           | AI Raw Data        | When the reading data of the electric meter is uploaded, store the raw data of the *Reading* measure point in TSDB directly. |
+| Reading           | AI Raw Data        | When the reading data of the electric meter is uploaded, store the raw data of the *Reading* measuring point in TSDB directly. |
 | MaxReading10Min   | AI Normalized Data | Get the maximum value of the reading data every 10 minutes with the stream processing engine, and then store the minute-level normalized data in TSDB. |
 | MinReading10Min   | AI Normalized Data | Get the minimum value of the reading data every 10 minutes with the stream processing engine, and then store the minute-level normalized data in TSDB. |
 | ReadingDifference | AI Normalized Data | Get the difference between the maximum and minimum values of the reading data with the stream processing engine, and then store the normalized data in TSDB. |
@@ -26,7 +26,7 @@ For detailed description of the supported storage types, see [Configuring TSDB S
 
 ## Configuring the storage policy
 
-After the storage group is created, you can see all the TSDB storage policy options listed under the storage group tab. Configure **AI Raw Data** and **AI Normalized Data** policies separately for the *Reading*, *MaxReading10Min*, *MinReading10Min*, and *ReadingDifference* measure points.
+After the storage group is created, you can see all the TSDB storage policy options listed under the storage group tab. Configure **AI Raw Data** and **AI Normalized Data** policies separately for the *Reading*, *MaxReading10Min*, *MinReading10Min*, and *ReadingDifference* measuring points.
 
 For configuring the **AI Raw Data** storage type, take the following steps:
 
@@ -34,7 +34,7 @@ For configuring the **AI Raw Data** storage type, take the following steps:
 
 2. From the **Storage Time** drop down list, select the storage time for the data (for example, 3 months).
 
-3. Select the *ElectricMeter* model and the *Reading* measure point.
+3. Select the *ElectricMeter* model and the *Reading* measuring point.
 
 4. Click **OK** to save the storage policy. See the following example.
 
@@ -46,7 +46,7 @@ For configuring the **AI Normalized Data** storage type, take the following step
 
 2. From the **Storage Time** drop down list, select the storage time for the data (for example, 3 months).
 
-3. Select the *ElectricMeter* model and the *MaxReading10Min*, *MinReading10Min*, and *ReadingDifference* measure points.
+3. Select the *ElectricMeter* model and the *MaxReading10Min*, *MinReading10Min*, and *ReadingDifference* measuring points.
 
 4. Click **OK** to save the storage policy. See the following example.
 

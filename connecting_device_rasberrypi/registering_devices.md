@@ -24,12 +24,12 @@ Detailed steps are as follows:
 
    .. image:: media/attribute_1.png
 
-4. From the model list, click **Edit** for the *poc_ smartdevice* model, and click **Feature Definition** to define the following measure points:
+4. From the model list, click **Edit** for the *poc_ smartdevice* model, and click **Feature Definition** to define the following measuring points:
 
    .. csv-table::
       :widths: auto
 
-      "Measure Point", "Description"
+      "Measuring Point", "Description"
       "*Temperature*", "Double type of data collected from the temperature sensor."
       "*Humidity*", "Double type of data collected from the humidity sensor."
       "*Light*", "Int type of data sending to Raspberry Pi to control the light. Sending 0 stands for light off, sending 1 stands for light on, and sending 2 stands for flickering in this case."
@@ -37,7 +37,7 @@ Detailed steps are as follows:
 
    .. image:: media/attribute_2.png
 
-You can define your own measure points in your device model by editing your model.
+You can define your own measuring points in your device model by editing your model.
 
 
 
