@@ -36,7 +36,7 @@ This step assumes that there is no device model to be reused on EnOS. Take the f
       "Feature Type", "Name", "Identifier", "Data Type", "Description"
       "Attribute", "brand", "brand", "String", "Brand information of the device"
       "Measuring Point", "temperature", "temperature", "Double", "Point to ingest the device temperature data"
-      "Service", "charging", "charging", "--", "Service that controls the charging status of the device"
+      "Service", "start_charging", "start_charging", "--", "Service that controls the charging status of the device"
 
 See the following screen capture of the created features of the model:
 
