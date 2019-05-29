@@ -49,7 +49,7 @@ public class demo {
         String subId = "subscription_id";
 
         /* service */
-        EosClient eosClient = new EosClient(host, port, accessKey, accessSecret);
+        EosClient eosClient = new EosClient(host, port, accessKey, secretKey);
         IDataService dataService = eosClient.getDataService();
 
         /* handler */
@@ -107,7 +107,7 @@ public class demo {
         
         
 		/* service */
-        EosClient eosClient = new EosClient(host, port, accessKey, accessSecret);
+        EosClient eosClient = new EosClient(host, port, accessKey, secretKey);
         IAlertService alertService = eosClient.getAlertService();
 
         /* handler */

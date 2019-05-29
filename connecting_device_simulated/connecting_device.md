@@ -38,13 +38,14 @@ Optionally, you can download the source code of the EnOS Device SDK from [GitHub
 
 After the EnOS Device SDK for MQTT for Java is installed, take the following steps to connect the battery device into EnOS Cloud (you can also refer to the `SimpleSendReceive.java` code sample available from `<SDK_Path>\src\main\java\com\envisioniot\enos\iot_mqtt_sdk\sample`):
 
-1. (Optional) Declare the public variables that will be used in the program, see the following example:
+1. Declare the public variables that will be used in the program, see the following example:
 
    ```java
    public static final String uri = "tcp://{host}:{port}";
    public static final String productKey = "cBwYbSIz";
    public static final String deviceKey = "rcV2wQ6Xer";
    public static final String deviceSecret = "BjyDrW8DMVfnxifQmaKo";
+   private static MqttClient client;
    ```
 
    - The `host` and `port` of the server vary with the cloud region and instance. For private cloud instances, contact your Envision project manager or support representative to get the host and port information.

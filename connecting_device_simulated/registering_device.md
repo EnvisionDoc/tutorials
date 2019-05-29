@@ -2,13 +2,13 @@
 
 Before connecting devices to EnOS IoT hub, you need to register the devices on the EnOS Console, which includes defining the device model, creating a product, registering the devices, and creating an asset tree for the devices.
 
-This tutorial takes a battery device as an example, focusing on how to register a device that connects directly to the EnOS Cloud.
+This tutorial takes a battery device as an example, focusing on how to register a smart device that connects directly to the EnOS Cloud.
 
 ## Step 1: Defining a Model
 
-A model is the abstraction of the features of an object that is connected to IoT. The device model defines the features of a device, including attributes, measuring points, services, and events. For more information about models, see [Thing Model](/docs/device-connection/en/latest/model/model_overview).
+A model is the abstraction of the features of an object that is connected to IoT hub. The device model defines the features of a device, including attributes, measuring points, services, and events. For more information about models, see [Thing Model](/docs/device-connection/en/latest/model/model_overview).
 
-This step assumes that there is no device model to be reused on EnOS. Take the following steps to create a model named **battery**.
+This step assumes that there is no device model to be reused on EnOS. Take the following steps to create a model named **battery** and define the needed features.
 
 1. In the EnOS Console, click **Model** from the left navigation panel.
 
@@ -18,8 +18,7 @@ This step assumes that there is no device model to be reused on EnOS. Take the f
    - **Model Name**: battery
    - **Category**: NA
    - **Create From**: No
-   - **Support Passthrough**: No
-   - **Source Model**: NA
+   - **Source Model**: No
    - **Description**: Model for battery
 
 3. Click **OK** to save the basic information of the model.
