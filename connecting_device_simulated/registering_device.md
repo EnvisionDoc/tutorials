@@ -79,9 +79,10 @@ In this step, create a device named **battery1**, which belongs to the **Battery
 
    - **Product**: Battery_Product
    - **Device Name**: battery1
+   - **Timezone/City**: UTC+08:00
    - **Use DST**: No
-   - **timezone**: UTC+08:00
    - **Device Key**: Optional (it can be generated automatically by the system)
+   - **brand**: Enter the brand information of the battery (an attribute defined for the model)
 
 3. Click **Confirm** to save the configuration.
 
@@ -89,7 +90,7 @@ In this step, create a device named **battery1**, which belongs to the **Battery
 
 For details about device settings, see [Creating a Device](https://www.envisioniot.com/docs/device-connection/en/latest/cloud/creating_device).
 
-After you complete the device registration, you can get the device triple properties: `ProductKey`, `DeviceKey`, and `DeviceSecret`, which will be used in connecting the device to EnOS IoT hub.
+After you complete the device registration, find the registered device from the device list, and click the **View** icon in the **Operations** column to open the **Device Details** page. You can get the device triple properties: `Product Key`, `Device Key`, and `Device Secret`, which will be used in connecting the device to EnOS IoT hub.
 
 .. image:: media/device_properties.png   
 

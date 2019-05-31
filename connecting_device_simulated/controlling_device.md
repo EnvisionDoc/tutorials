@@ -8,7 +8,16 @@ After the battery device is connected into the EnOS Cloud, you can send commands
 
    With the *start_charging* service, you can send instructions from the cloud to the battery device.
 
-2. Use the `handleServiceInvocation` function to process the service invocation:
+2. Declare the following main functions for simulating device data:
+
+   ```java
+   public static void main(String[] args) throws Exception {
+       initWithCallback();
+       handleServiceInvocation();
+   }
+   ```
+
+3. Use the `handleServiceInvocation` function to process the service invocation:
 
    ```java
    public static void handleServiceInvocation() {
@@ -22,22 +31,21 @@ After the battery device is connected into the EnOS Cloud, you can send commands
        }
    ```
 
-3. Use the debugging function of the **Product** configuration to test sending instructions to the device.
+4. Use the debugging function of the **Product** configuration to test sending instructions to the device.
 
    .. image:: media/debugging_device.png
 
-4. Select the *start_charging* service from the **Debugging** field, input a value for the *result* parameter, and click **Run**. The instruction will be sent to the device.
+5. Select the *start_charging* service from the **Debugging** field, input a value for the *result* parameter, and click **Run**. The instruction will be sent to the device.
 
    .. image:: media/service_instruction.png
 
-5. The running program will receive the service invocation message. See the following example:
+6. The running program will receive the service invocation message. See the following example:
 
    ```
-   rcvn async service invocation commandAnswerableMessageBody{id='5', method='thing.service.start_charging', version='1.0', params={}} topic [OjupXK76, keyofbattery2, start_charging]
+   rcvn async service invocation commandAnswerableMessageBody{id='2267850613537742848', method='thing.service.start_charging', version='1.0', params={result=1}} topic [OjupXK76, keyofbattery1, start_charging]
    ```
 
 
 ## Next Unit
 
 [Monitoring the Device Performance with Alerts](monitoring_alarms)
-

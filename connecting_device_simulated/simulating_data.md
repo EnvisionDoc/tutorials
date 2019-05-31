@@ -19,9 +19,9 @@ After the battery device is connected into the EnOS Cloud, you can simulate the 
                long ts = System.currentTimeMillis();
                Random random = new Random();
                System.out.println("start post measurepoint ...");
-   
+
                MeasurepointPostRequest request = MeasurepointPostRequest.builder().addMeasurePoint("temperature", random.nextDouble()).build();
-   
+
                try {
                    client.fastPublish(request);
                    System.out.println(" post measurepoint success...");
@@ -42,7 +42,7 @@ After the battery device is connected into the EnOS Cloud, you can simulate the 
 
    .. image:: media/view_data.png
 
-5. Click **View data**, open the **Data Insights** page, and view the latest data of the **temperature** measuring point.
+5. Click **View data**, open the **Data Insights** page, and view the latest data of the **temperature** measuring point on the Data Insights page.
 
 ## Next Unit
 
